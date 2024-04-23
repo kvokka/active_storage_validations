@@ -183,7 +183,7 @@ In several cases, Active Storage Validations provides variables to help you cust
 
 ### Aspect ratio
 The keys starting with `aspect_ratio_` support two variables that you can use:
-- `aspect_ratio` containing the expected aspect ratio, especially usefull for custom aspect ratio
+- `aspect_ratio` containing the expected aspect ratio, especially useful for custom aspect ratio
 - `filename` containing the current file name
 
 For example :
@@ -275,7 +275,7 @@ $ bundle
 
 ## Sample
 
-Very simple example of validation with file attached, content type check and custom error message.
+A very simple example of validation with the file attached, content type check, and custom error message.
 
 [![Sample](https://raw.githubusercontent.com/igorkasyanchuk/active_storage_validations/master/docs/preview.png)](https://raw.githubusercontent.com/igorkasyanchuk/active_storage_validations/master/docs/preview.png)
 
@@ -384,7 +384,7 @@ To run tests in root folder of gem:
 
 * `BUNDLE_GEMFILE=gemfiles/rails_6_1_3_1.gemfile bundle exec rake test` to run for Rails 6.1
 * `BUNDLE_GEMFILE=gemfiles/rails_7_0.gemfile bundle exec rake test` to run for Rails 7.0
-* `BUNDLE_GEMFILE=gemfiles/rails_7_1.gemfile bundle exec rake test` to run for Rails 7.0
+* `BUNDLE_GEMFILE=gemfiles/rails_7_1.gemfile bundle exec rake test` to run for Rails 7.1
 * `BUNDLE_GEMFILE=gemfiles/rails_next.gemfile bundle exec rake test` to run for Rails main branch
 
 Snippet to run in console:
@@ -407,7 +407,7 @@ Tips:
 
 ## Known issues
 
-- There is an issue in Rails which it possible to get if you have added a validation and generating for example an image preview of attachments. It can be fixed with this:
+- There is an issue in Rails, which is possible to get if you have added validation and generated, for example, an image preview of attachments. It can be fixed with this:
 
 ```erb
   <% if @user.avatar.attached? && @user.avatar.attachment.blob.present? && @user.avatar.attachment.blob.persisted? %>
@@ -415,7 +415,7 @@ Tips:
   <% end %>
 ```
 
-This is a Rails issue, and is fixed in Rails 6.
+This is a Rails issue and is fixed in Rails 6.
 
 ## Contributing
 
